@@ -1,5 +1,7 @@
 package pract6A;
 
+import java.time.LocalDate;
+
 public class Main6A {
     public static void main(String[] args) {
         int releaseJaar1 = LocalDate.now().getYear() - 1;

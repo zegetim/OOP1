@@ -1,6 +1,6 @@
 package pract5;
 
-public class Klas {
+/*public class Klas {
     private String klasCode;
     private ArrayList<Leerling> leerlingen;
 
@@ -36,4 +36,4 @@ public class Klas {
         }
         return a;
     }
-}
+}*/

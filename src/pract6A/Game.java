@@ -1,21 +1,27 @@
 package pract6A;
 
+import java.time.LocalDate;
+
 public class Game {
-    private String naam;
+    private String naamGame;
     private int releaseJaar;
     private double nieuwprijs;
 
-    public Game(String nm, int rJ,double nwpr){
-        naam=nm;releaseJaar=rJ;nieuwprijs=nwpr;
+    public Game(String ng, int rJ,double nwpr){
+        naamGame=ng;releaseJaar=rJ;nieuwprijs=nwpr;
     }
     public String getNaam(){
-        return naam;
+        return naamGame;
     }
     public double huidigeWaarde(){
+        double waarde = nieuwprijs * Math.pow(0.7 ,( LocalDate.now().getYear() -releaseJaar));
+        return waarde;
     }
-    public boolean equals(Object andereObject){
+   /* public boolean equals(Object andereObject){
 
-    }
+
+    }*/
     public String toString(){
+        return naamGame + ", uitgegeven in " + releaseJaar + "; nieuwprijs: " + nieuwprijs + " nu voor: " + huidigeWaarde();
     }
 }
