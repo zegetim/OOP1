@@ -11,11 +11,11 @@ public class Game {
     public String getNaam(){
         return naam;
     }
-    public double huidigeWaarde(){
-    }
-    public boolean equals(Object andereObject){
-
-    }
-    public String toString(){
-    }
+//    public double huidigeWaarde(){
+//    }
+//    public boolean equals(Object andereObject){
+//
+//    }
+//    public String toString(){
+//    }
 }

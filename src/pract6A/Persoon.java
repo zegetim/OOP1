@@ -10,10 +10,10 @@ public class Persoon {
     public double getBudget(){
         return  budget;
     }
-    public boolean koop(Game g){
-    }
-    public boolean verkoop(Game g,Persoon koper){
-    }
-    public String toString(){
-    }
+//    public boolean koop(Game g){
+//    }
+//    public boolean verkoop(Game g,Persoon koper){
+//    }
+//    public String toString(){
+//    }
 }

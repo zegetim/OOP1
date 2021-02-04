@@ -33,21 +33,24 @@ public class AutoHuur {
     }
     public String toString(){
         String s;
+        String a;
+        String b;
         if(gehuurdeAuto==null){
-             s= "er is geen auto bekend\n";
+             a= "er is geen auto bekend\n";
             }
         else{
-            s= "autotype: "+ gehuurdeAuto + "\n";
+            a= "autotype: "+ gehuurdeAuto + "\n";
         }
 
         if(huurder==null){
-            s=  "er is geen huurder bekend\n";
+            b=  "er is geen huurder bekend\n";
        }
         else{
-            s=  "op naam van: " + huurder + "\n";
+            b=  "op naam van: " + huurder + "\n";
         }
-        s=  "aantal dagen: " + aantalDagen + " en dat kost: " + totaalPrijs();
-        return s;
+        s=  "aantal dagen: " + aantalDagen + " en dat kost: " + totaalPrijs() + "\n";
+        return a+b+s;
+
 
         }
 

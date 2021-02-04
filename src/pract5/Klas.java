@@ -1,5 +1,7 @@
 package pract5;
 
+import java.util.ArrayList;
+
 public class Klas {
     private String klasCode;
     private ArrayList<Leerling> leerlingen;
