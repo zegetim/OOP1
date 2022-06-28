@@ -3,7 +3,7 @@ package pract7;
 import java.util.ArrayList;
 
 public class StringProcessor {
-    private ArrayList<OpmaakProces> processen = new ArrayList<OpmaakProces>();
+    private ArrayList<OpmaakProces> processen;
     public StringProcessor(){
         processen = new ArrayList<>();
     }

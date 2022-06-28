@@ -21,7 +21,9 @@ public class Game {
 
 
     }*/
-    public String toString(){
-        return naamGame + ", uitgegeven in " + releaseJaar + "; nieuwprijs: " + nieuwprijs + " nu voor: " + huidigeWaarde();
+    public String toString() {
+        String s = naamGame + ", uitgegeven in " + releaseJaar + "; nieuwprijs: " + nieuwprijs + " nu voor: " + huidigeWaarde() + "\n";
+
+        return s;
     }
 }

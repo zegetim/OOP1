@@ -1,6 +1,8 @@
 package pract5;
 
-/*public class Klas {
+import java.util.ArrayList;
+
+public class Klas {
     private String klasCode;
     private ArrayList<Leerling> leerlingen;
 
@@ -36,4 +38,4 @@ package pract5;
         }
         return a;
     }
-}*/
+}

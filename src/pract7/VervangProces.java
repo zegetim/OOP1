@@ -1,6 +1,6 @@
 package pract7;
 
-public class VervangProces {
+public class VervangProces implements OpmaakProces {
     private String oud;
     private String nieuw;
 

@@ -2,7 +2,7 @@ package pract8;
 
 public class Main8 {
     public static void main(String[] args){
-        BedrijfsInventaris b1 = new BedrijfsInventaris("HU", 1000000);
+        BedrijfsInventaris b1 = new BedrijfsInventaris("HU", 10000000);
         Computer c1 = new Computer("hp", "00:1B:44:11:3A:B7", 2000, 2019);
         Computer c2 = new Computer("hp", "00:1B:44:11:3A:B7", 2000, 2019);
         Computer c3 = new Computer("macbook", "00:1B:44:11:3A:F1", 2000, 2019);

@@ -32,21 +32,21 @@ public class AutoHuur {
         return aantalDagen*gehuurdeAuto.getPrijsPerDag()*((huurder.getKorting()*9)/100);
     }
     public String toString(){
-        String s;
+        String s="";
         if(gehuurdeAuto==null){
-             s= "er is geen auto bekend\n";
+             s+= "er is geen auto bekend\n";
             }
         else{
-            s= "autotype: "+ gehuurdeAuto + "\n";
+            s+= "autotype: "+ gehuurdeAuto + "\n";
         }
 
         if(huurder==null){
-            s=  "er is geen huurder bekend\n";
+            s=s+  "er is geen huurder bekend\n";
        }
         else{
-            s=  "op naam van: " + huurder + "\n";
+            s+=  "op naam van: " + huurder + "\n";
         }
-        s=  "aantal dagen: " + aantalDagen + " en dat kost: " + totaalPrijs();
+        s+=  "aantal dagen: " + aantalDagen + " en dat kost: " + totaalPrijs();
         return s;
 
         }

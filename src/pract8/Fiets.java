@@ -13,4 +13,14 @@ public class Fiets extends Voertuig{
     }
     /*public boolean equals(Object obj){
     }*/
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Fiets fiets = (Fiets) o;
+        return framenummer == fiets.framenummer &&
+                productieJaar == fiets.productieJaar;
+    }
 }

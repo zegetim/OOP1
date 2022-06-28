@@ -1,6 +1,6 @@
 package pract5;
 
-/*public class Main5 {
+public class Main5 {
     public static void main(String[] arg) {
         Klas k = new Klas("V1Z");
         Leerling l = new Leerling("Hans");
@@ -15,4 +15,4 @@ package pract5;
         System.out.println(k.toString());
         System.out.println("Aantal leerlingen: " + k.aantalLeerlingen());
     }
-}*/
+}

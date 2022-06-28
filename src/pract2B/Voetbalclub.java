@@ -1,12 +1,12 @@
 package pract2B;
 
 public class Voetbalclub {
-    public String naam;
-    public int aantalGewonnen;
-    public int aantalGelijk;
-    public int aantalVerloren;
-    public int aantalGespeeld;
-    public int aantalPunten;
+    private String naam;
+    private int aantalGewonnen;
+    private int aantalGelijk;
+    private int aantalVerloren;
+    private int aantalGespeeld;
+    private int aantalPunten;
 
     public Voetbalclub(String nm) {
         naam = nm;

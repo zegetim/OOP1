@@ -1,6 +1,6 @@
 package pract7;
 
-/*public class UitgeverApp {
+public class UitgeverApp {
     public static void main(String[] args) {
         StringProcessor processor = new StringProcessor();
         processor.voegProcesToe(new VervangProces("hij", "hij/zij"));
@@ -9,4 +9,4 @@ package pract7;
         String result = processor.verwerk(inputString);
         System.out.println(result);
     }
-}*/
+}

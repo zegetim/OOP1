@@ -5,34 +5,50 @@ import java.util.ArrayList;
 public class Persoon {
     private String naam;
     private double budget;
-    private ArrayList<String> Games;
+    private ArrayList<Game> games = new ArrayList<Game>();
+    private Object Game;
 
-    public Persoon(String nm,double bud){
-        naam=nm;budget=bud;
+
+    public Persoon(String nm, double bud) {
+        naam = nm;
+        budget = bud;
     }
-    public double getBudget(){
-        return  budget;
+
+    public double getBudget() {
+        return budget;
     }
+
     public boolean koop(Game g) {
-        if (budget > g.huidigeWaarde()) {
-            return true;
-        }
-        Games.add(naam);
-        budget -= g.huidigeWaarde();
-        return true;
+            if (budget > g.huidigeWaarde() && !games.contains(g)) {
 
-        }
+                games.add(g);
+                budget -= g.huidigeWaarde();
+                return true;
+            }
+        return false;
+}
 
 
     public boolean verkoop(Game g,Persoon koper){
-        if(budget > g.huidigeWaarde()){
-            return true;
-        }
-        Games.remove(naam);
+
+        if(koper.budget > g.huidigeWaarde()&&games.contains(g)){
+
+        games.remove(g);
+        koper.games.add(g);
+        koper.budget -= g.huidigeWaarde();
         budget += g.huidigeWaarde();
         return true;
     }
+        return false;
+    }
+
     public String toString(){
-        return naam + " heeft een budget van " + budget + " en bezit de volgende games:";
+        String listofGames = "";
+        for (Game game : games) {
+            listofGames += "\n" + game.toString();
+        }
+
+        String s = naam + " heeft een budget van " + String.format("%.2f", budget) + " en bezit de volgende games:" +"\n"+ games;
+        return s;
     }
 }
