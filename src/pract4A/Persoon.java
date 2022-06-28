@@ -8,7 +8,7 @@ public class Persoon {
         naam=nm;leeftijd=lft;
     }
     public String toString(){
-        String a="en heeft huisbaas "+naam+"; leeftijd "+ leeftijd;
+        String a=naam+"; leeftijd "+ leeftijd + " jaar";
         return a;
     }
 }
